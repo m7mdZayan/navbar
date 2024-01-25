@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a href="#">Marvya</a>
+        </div>
+
+        <input type="checkbox" class="header__checkbox" id="nav-toggler" />
+
+        <label for="nav-toggler" class="header__button" aria-label="navigation toggler">
+            <span class="header__hamburger"></span>
+        </label>
+        <nav>
+            <ul class="header__nav">
+                <li>
+                    <a href="#" class="header__nav--item">home</a>
+                </li>
+                <li>
+                    <a href="#" class="header__nav--item">about</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="header__nav--item dropdown-toggle">menu</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">item 1</a></li>
+                        <li><a href="#">item 2</a></li>
+                        <li><a href="#">item 3</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="header__nav--item dropdown-toggle">projects</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">project 1</a></li>
+                        <li><a href="#">project 2</a></li>
+                        <li class="dropdown--inner">
+                            <a href="#" class="dropdown-toggle">subprojects</a>
+                            <ul class="dropdown-menu--inner right-dropdown">
+                                <li><a href="#">subproject 1</a></li>
+                                <li><a href="#">subproject 2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="header__nav--item">contacts</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
